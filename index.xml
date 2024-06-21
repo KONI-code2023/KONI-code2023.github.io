@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>konnie.log</title>
+    <link>https://KONI-code2023.github.io/</link>
+    <description>Recent content on konnie.log</description>
+    <image>
+      <title>konnie.log</title>
+      <url>https://KONI-code2023.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://KONI-code2023.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.127.0</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 12 Jun 2024 22:21:30 +0000</lastBuildDate>
+    <atom:link href="https://KONI-code2023.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>網路攻防實務 (六) - 滲透測試</title>
+      <link>https://KONI-code2023.github.io/blog/code-assignment06/</link>
+      <pubDate>Wed, 12 Jun 2024 22:21:30 +0000</pubDate>
+      <guid>https://KONI-code2023.github.io/blog/code-assignment06/</guid>
+      <description>0x00 題目說明 請利用 CDX 系統創建兩個虛擬機 VM1(CDX_Kali_Linux-2020.4-TMPL-custom)、VM2(CDX-Metasploitable2-TMPL-custom) 分別作為攻擊機和靶機，並執行下列操作：
+使用 VM1 收集 VM2 的系統資訊，並說明收集到的內容 使用 Wireshark 收集網路流量 使用 VM1 取得 VM2 的管理員權限，進入系統並顯示 VM2 的網路配置 將 VM2 更改為 CDX-OWASP-BWA-TMPL-custom，然後使用 VM1 進行弱點掃描，找出並說明 VM2 上的漏洞 0x01 使用 VM1 收集 VM2 的系統資訊，並說明收集到的內容 創建 VM1 和 VM2 ，這邊攻擊機用的是 2024.1 版： 收集靶機資訊： 先用 nmap 進行主動掃描，並將結果保存
+kali@kali:~$sudo nmap 10.98.0.118 -p- -A -oN nmap_10.98.0.118 &amp;#34;-p-&amp;#34;: 掃描所有連接埠 (範圍0~65535) &amp;#34;-A&amp;#34;: 侵入式掃描，同時執行作業系統檢測、版本檢測、腳本掃描和 Traceroute &amp;#34;-oN&amp;#34;: 將掃描結果保存到指定文件 (nmap_10.98.0.118) 中 整理之後如下
+主機基本信息： * IP Address: 10.98.0.118 * MAC Address: 02:00:0A:62:00:76 * OS: Linux 2.</description>
+    </item>
+    <item>
+      <title>網路攻防實務 (五) - DDoS 攻擊</title>
+      <link>https://KONI-code2023.github.io/blog/code-assignment05/</link>
+      <pubDate>Tue, 04 Jun 2024 22:21:30 +0000</pubDate>
+      <guid>https://KONI-code2023.github.io/blog/code-assignment05/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>網路攻防實務 (四) - ubuntu 防火牆設定</title>
+      <link>https://KONI-code2023.github.io/blog/code-assignment04/</link>
+      <pubDate>Tue, 28 May 2024 22:21:30 +0000</pubDate>
+      <guid>https://KONI-code2023.github.io/blog/code-assignment04/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>網路攻防實務 (三) - 流量分析</title>
+      <link>https://KONI-code2023.github.io/blog/code-assignment03/</link>
+      <pubDate>Tue, 21 May 2024 22:21:30 +0000</pubDate>
+      <guid>https://KONI-code2023.github.io/blog/code-assignment03/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>網路攻防實務 (二) - 安裝 Apache2 伺服器</title>
+      <link>https://KONI-code2023.github.io/blog/code-assignment02/</link>
+      <pubDate>Tue, 14 May 2024 22:21:30 +0000</pubDate>
+      <guid>https://KONI-code2023.github.io/blog/code-assignment02/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>網路攻防實務 (一) - 系統檢測</title>
+      <link>https://KONI-code2023.github.io/blog/code-assignment01/</link>
+      <pubDate>Tue, 07 May 2024 22:21:30 +0000</pubDate>
+      <guid>https://KONI-code2023.github.io/blog/code-assignment01/</guid>
+      <description>0x00 題目說明 請利用 CDX 系統創建兩個虛擬機 VM1(CDX_Kali_Linux-2020.4-TMPL-custom)、VM2(CDX-Metasploitable2-TMPL-custom) 分別作為攻擊機和靶機，並執行下列操作：
+使用 VM1 收集 VM2 的系統資訊，並說明收集到的內容 使用 Wireshark 收集網路流量 使用 VM1 取得 VM2 的管理員權限，進入系統並顯示 VM2 的網路配置 將 VM2 更改為 CDX-OWASP-BWA-TMPL-custom，然後使用 VM1 進行弱點掃描，找出並說明 VM2 上的漏洞 0x01 使用 VM1 收集 VM2 的系統資訊，並說明收集到的內容 </description>
+    </item>
+  </channel>
+</rss>
